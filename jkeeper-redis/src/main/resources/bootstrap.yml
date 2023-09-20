@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: jkeeper-redis
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher

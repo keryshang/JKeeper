@@ -12,6 +12,7 @@
     <modules>
         <module>jkeeper-common</module>
         <module>jkeeper-nacos</module>
+        <module>jkeeper-redis</module>
     </modules>
 
     <parent>

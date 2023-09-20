@@ -20,8 +20,8 @@ public class SwaggerConfig extends BaseSwaggerConfig {
     public SwaggerProperties swaggerProperties() {
         return SwaggerProperties.builder()
                 .apiBasePackage("com.kery.jkeeper.controller")
-                .title("JKeeper-Nacos")
-                .description("JKeeper-Nacos模块相关接口文档")
+                .title("JKeeper-Redis")
+                .description("JKeeper-Redis模块相关接口文档")
                 .contactName("Kery")
                 .version("1.0")
                 .enableSecurity(true)
