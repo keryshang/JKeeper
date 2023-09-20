@@ -18,6 +18,6 @@
 
 ## 许可证
 
-[Apache License 2.0](https://github.com/macrozheng/mall-swarm/blob/master/LICENSE)
+[Apache License 2.0](https://gitee.com/keryshang/jkeeper/blob/master/LICENSE)
 
 Copyright (c) 2023-2023 Kery
