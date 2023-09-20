@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>jkeeper-common</module>
         <module>jkeeper-nacos</module>
     </modules>
 
@@ -24,6 +25,8 @@
         <spring-cloud.version>2021.0.3</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
         <hutool.version>5.8.0</hutool.version>
+        <jkeeper-common.version>1.0-SNAPSHOT</jkeeper-common.version>
+        <springfox-swagger.version>3.0.0</springfox-swagger.version>
     </properties>
 
     <dependencies>
@@ -73,11 +76,23 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--JKeeper通用模块-->
+            <dependency>
+                <groupId>com.kery.jkeeper</groupId>
+                <artifactId>jkeeper-common</artifactId>
+                <version>${jkeeper-common.version}</version>
+            </dependency>
             <!--Hutool Java工具包-->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
+            </dependency>
+            <!--Swagger-UI API文档生产工具-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${springfox-swagger.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
