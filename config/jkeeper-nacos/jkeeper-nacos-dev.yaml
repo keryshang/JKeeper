@@ -1,0 +1,7 @@
+logging:
+  level:
+    root: info
+    com.kery.jkeeper: debug
+user:
+  name: Kery
+  age: 18
