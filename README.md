@@ -1,30 +1,16 @@
 # JKeeper
 
-#### 介绍
-JKeeper：Java管理员
+### `JKeeper`致力于整合主流Java技术栈
 
 #### 软件架构
-软件架构说明
+1. SpringBoot 2.7.0
+2. SpringCloud 2021.0.3
+3. Naocs 1.4.2
 
+#### 项目目录
 
-#### 安装教程
+1.  JKeeper-Nacos
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
 
 
 #### 特技
