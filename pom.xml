@@ -23,6 +23,7 @@
     </parent>
 
     <properties>
+        <spring-boot.version>2.7.0</spring-boot.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
         <hutool.version>5.8.0</hutool.version>
@@ -97,5 +98,18 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot.version}</version>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
