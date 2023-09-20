@@ -1,11 +1,3 @@
 # 默认忽略的文件
 /shelf/
 /workspace.xml
-/compiler.xml
-/encodings.xml
-/jarRepositories.xml
-/misc.xml
-/uiDesigner.xml
-/vcs.xml
-.gitignore
-../.idea
