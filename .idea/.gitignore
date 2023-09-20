@@ -7,3 +7,5 @@
 /misc.xml
 /uiDesigner.xml
 /vcs.xml
+.gitignore
+../.idea
