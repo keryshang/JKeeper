@@ -26,12 +26,23 @@ public class CommonResult<T> {
     protected CommonResult() {
     }
 
+    protected CommonResult(long code, String message){
+        this.code = code;
+        this.message = message;
+    }
+
     protected CommonResult(long code, String message, T data) {
         this.code = code;
         this.message = message;
         this.data = data;
     }
 
+    /**
+     * 成功无返回
+     */
+    public static <T> CommonResult<T> success(){
+        return new CommonResult<T>(ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getMessage());
+    }
     /**
      * 成功返回结果
      *

@@ -13,6 +13,7 @@
         <module>jkeeper-common</module>
         <module>jkeeper-nacos</module>
         <module>jkeeper-redis</module>
+        <module>jkeeper-rocketmq</module>
     </modules>
 
     <parent>
@@ -23,12 +24,16 @@
     </parent>
 
     <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-boot.version>2.7.0</spring-boot.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
         <hutool.version>5.8.0</hutool.version>
         <jkeeper-common.version>1.0-SNAPSHOT</jkeeper-common.version>
         <springfox-swagger.version>3.0.0</springfox-swagger.version>
+        <rocketmq-spring-boot.version>2.2.3</rocketmq-spring-boot.version>
     </properties>
 
     <dependencies>
@@ -101,6 +106,12 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-boot-starter</artifactId>
                 <version>${springfox-swagger.version}</version>
+            </dependency>
+            <!--RocketMQ-->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-spring-boot-starter</artifactId>
+                <version>${rocketmq-spring-boot.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
