@@ -13,12 +13,12 @@ spring:
       username: nacos
       password: nacos
       config:
-        namespace: #默认是public
+        #namespace: #默认是public
         file-extension: yaml
         shared-configs:
           - data-id: app.service.common1.yaml
             refresh: true
-            #group:  默认是DEFAULT-GROUP
+            #group:  #默认是DEFAULT-GROUP
           - data-id: app.service.common2.yaml
             refresh: true
         extension-configs:
