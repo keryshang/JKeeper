@@ -1,4 +1,23 @@
 # Nacos使用手册
+### Nacos配置模板
+```yaml
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.103:8848
+        username: 
+        password: 
+        namespace: #默认是public
+        group: #默认是DEFAULT_GROUP
+      config:
+        server-addr: 192.168.1.103:8848
+        username: nacos
+        password: nacos
+        namespace: #默认是public
+        group: #默认是DEFAULT_GROUP
+        file-extension: yaml
+```
 ### 自定义扩展DataId
 Jkeeper-Nacos配置中心使用的是默认DataId模式，Nacos还支持自定义扩展的DataId模式。通过自定义扩展的 Data Id 配置，既可以解决多个应用间配置共享的问题，又可以支持一个应用有多个配置文件。  
 #### 自定义 Data Id 的配置有两种方式：
