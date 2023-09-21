@@ -32,27 +32,33 @@
     </properties>
 
     <dependencies>
+        <!--SpringBoot健康监控-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        <!--SpringBoot集成AOP-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
+        <!--SpringBoot集成Test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
         </dependency>
+        <!--集成Lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <!--生产配置元数据,yml添加配置时产生提示-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
@@ -84,13 +90,13 @@
                 <artifactId>jkeeper-common</artifactId>
                 <version>${jkeeper-common.version}</version>
             </dependency>
-            <!--Hutool Java工具包-->
+            <!--hutool工具类 https://doc.hutool.cn/pages/index/-->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
-            <!--Swagger3-UI API文档生产工具-->
+            <!--Swagger3-UI API文档-->
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-boot-starter</artifactId>
@@ -102,6 +108,7 @@
     <build>
         <pluginManagement>
             <plugins>
+                <!--Springboot提供的Maven打包插件-->
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
