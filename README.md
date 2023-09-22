@@ -6,9 +6,10 @@
 1. SpringBoot 2.7.0
 2. SpringCloud 2021.0.3
 3. Swagger-UI
-4. Nacos
-5. Redis
-6. RocketMQ
+4. Logback
+5. Nacos
+6. Redis
+7. RocketMQ
 #### 项目目录
 
 1.  JKeeper-Nacos
