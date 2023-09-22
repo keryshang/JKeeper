@@ -1,4 +1,18 @@
 # Nacos使用手册
+
+### 依赖
+```xml
+        <!--对nacos注册中心的支持-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--对nacos配置中心的支持-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+```
 ### Nacos配置模板
 ```yaml
 spring:
