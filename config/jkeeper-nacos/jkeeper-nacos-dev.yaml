@@ -1,7 +1,6 @@
-logging:
-  level:
-    root: info
-    com.kery.jkeeper: debug
 user:
   name: Kery
   age: 18
+
+logging:
+  config: classpath:logback-spring.xml
