@@ -20,6 +20,7 @@
             <groupId>com.kery.jkeeper</groupId>
             <artifactId>jkeeper-common</artifactId>
         </dependency>
+        <!--对RocketMQ的支持-->
         <dependency>
             <groupId>org.apache.rocketmq</groupId>
             <artifactId>rocketmq-spring-boot-starter</artifactId>

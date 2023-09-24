@@ -1,7 +1,7 @@
 package com.kery.jkeeper.controller;
 
 import com.kery.jkeeper.common.api.CommonResult;
-import com.kery.jkeeper.common.service.RedisService;
+import com.kery.jkeeper.service.RedisService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.v3.oas.annotations.tags.Tag;
