@@ -17,13 +17,13 @@
 #### 项目结构 `[持续更新中]`
 ```lua
 Jkeeper
-├──JKeeper-Nacos
-├──JKeeper-Redis
-├──JKeeper-RocketMQ
-├──JKeeper-RocketMQ
-├──JKeeper-Monitor
-├──JKeeper-Mybatis-Generator
-└──佛系Coding中。。。
+├── JKeeper-Nacos
+├── JKeeper-Redis
+├── JKeeper-RocketMQ
+├── JKeeper-RocketMQ
+├── JKeeper-Monitor
+├── JKeeper-Mybatis-Generator
+└── 佛系Coding中。。。
 
 ```
 
