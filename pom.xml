@@ -15,6 +15,7 @@
         <module>jkeeper-redis</module>
         <module>jkeeper-rocketmq</module>
         <module>jkeeper-monitor</module>
+        <module>jkeeper-mybatis-generator</module>
     </modules>
 
     <parent>
@@ -36,6 +37,10 @@
         <springfox-swagger.version>3.0.0</springfox-swagger.version>
         <rocketmq-spring-boot.version>2.2.3</rocketmq-spring-boot.version>
         <admin-starter-server.version>2.7.0</admin-starter-server.version>
+        <mybatis-generator.version>1.4.1</mybatis-generator.version>
+        <pagehelper-starter.version>1.4.2</pagehelper-starter.version>
+        <druid.version>1.2.9</druid.version>
+        <mysql-connector.version>8.0.29</mysql-connector.version>
     </properties>
 
     <dependencies>
@@ -120,6 +125,30 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-server</artifactId>
                 <version>${admin-starter-server.version}</version>
+            </dependency>
+            <!-- MyBatis 生成器 -->
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>${mybatis-generator.version}</version>
+            </dependency>
+            <!--MyBatis分页插件starter-->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper-starter.version}</version>
+            </dependency>
+            <!--集成druid连接池-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!--Mysql数据库驱动-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
