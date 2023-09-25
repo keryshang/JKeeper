@@ -12,14 +12,20 @@
 7. RocketMQ 消息队列
 8. SpringBootAdmin 系统监控
 9. Mybatis 持久层管理
+10. 。。。
 
-#### 项目目录 `[持续更新中]`
-1.  JKeeper-Nacos
-2.  JKeeper-Redis
-3.  JKeeper-RocketMQ
-4.  JKeeper-Monitor
-5. JKeeper-Mybatis-Generator
-6. 佛系Coding中。。。
+#### 项目结构 `[持续更新中]`
+```lua
+Jkeeper
+├──JKeeper-Nacos
+├──JKeeper-Redis
+├──JKeeper-RocketMQ
+├──JKeeper-RocketMQ
+├──JKeeper-Monitor
+├──JKeeper-Mybatis-Generator
+└──佛系Coding中。。。
+
+```
 
 #### 系统蓝图
 > https://www.processon.com/view/link/650da3215b73a44bd050dffb
