@@ -1,5 +1,7 @@
 package com.kery.jkeeper.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.kery.jkeeper.common.api.CommonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -19,9 +21,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/sentinel")
 public class SentinelController {
 
-    @ApiOperation("查询")
-    @GetMapping("/query")
-    public CommonResult query(){
-        return CommonResult.success("Sentinel");
+    private int num = 0;
+
+    @ApiOperation("限流")
+    @GetMapping("/flow")
+    public CommonResult flow(){
+        return CommonResult.success("Sentinel-Flow");
+    }
+
+    @ApiOperation("熔断降级")
+    @GetMapping("/degrade")
+    public CommonResult degrade(){
+        num++;
+        if(num%3 == 0){ //模拟服务异常
+            throw  new RuntimeException();
+        }
+        return CommonResult.success("Sentinel-Degrade");
     }
 }

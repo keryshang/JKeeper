@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    sentinel:
+      transport: # 配置 sentinel dashboard 地址
+        dashboard: 192.168.1.103:8858
+        #client-ip: 192.168.1.1
+        host: 8719
+      eager: true #服务启动直接建立心跳连接
+      datasource:
+        flow: #限流 名称任意, 代表数据源
+          nacos:
+            server-addr: 192.168.1.103:8848
+            dataId: jkeeper-sentinel-flow.json
+            namespace: public
+            groupId: DEFAULT_GROUP
+            data-type: json
+            # 规则类型: com.alibaba.cloud.sentinel.datasource.RuleType
+            # FlowRule 就是限流规则
+            rule-type: flow
+        degrade: #熔断
+          nacos:
+            server-addr: 192.168.1.103:8848
+            dataId: jkeeper-sentinel-degrade.json
+            namespace: public
+            groupId: DEFAULT_GROUP
+            data-type: json
+            ruleType: degrade

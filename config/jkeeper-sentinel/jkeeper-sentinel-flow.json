@@ -1,0 +1,14 @@
+[
+  {
+    "resource": "/sentinel/flow",
+    "limitApp": "default",
+    "grade": 1,
+    "count": 2,
+    "clusterMode": false,
+    "strategy": 0,
+    "controlBehavior": 0,
+    "warmUpPeriodSec": 0,
+    "maxQueueingTimeMs": 0,
+    "refResource": ""
+  }
+]

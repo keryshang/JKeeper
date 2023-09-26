@@ -1,0 +1,9 @@
+[{
+  "resource":"/sentinel/degrade",
+  "grade":1,
+  "count": 0.1,
+  "timeWindow":10,
+  "minRequestAmount":2,
+  "statIntervalMs":1000,
+  "slowRatioThreshold":0.3
+}]
