@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.kery.jkeeper</groupId>
+        <artifactId>jkeeper</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>jkeeper-feigh</artifactId>
+    <packaging>pom</packaging>
+
+    <name>jkeeper-feigh</name>
+    <modules>
+        <module>provider-a</module>
+        <module>provider-b</module>
+        <module>consumer</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.kery.jkeeper</groupId>
+            <artifactId>jkeeper-common</artifactId>
+        </dependency>
+        <!--整合Feign-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!--OKHTTP连接池-->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

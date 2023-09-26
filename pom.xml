@@ -16,6 +16,7 @@
         <module>jkeeper-rocketmq</module>
         <module>jkeeper-monitor</module>
         <module>jkeeper-mybatis-generator</module>
+        <module>jkeeper-feigh</module>
     </modules>
 
     <parent>
