@@ -44,6 +44,10 @@ spring:
             groupId: DEFAULT_GROUP
             data-type: json
             ruleType: degrade
+logging:
+  level:
+    root: info
+    com.kery.jkeeper: debug
 ```
 
 ### 流控规则

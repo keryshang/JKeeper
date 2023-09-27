@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.kery.jkeeper</groupId>
+        <artifactId>jkeeper</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>jkeeper-gateway</artifactId>
+
+
+    <name>jkeeper-gateway</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.kery.jkeeper</groupId>
+            <artifactId>jkeeper-common</artifactId>
+            <exclusions>
+                <!--去除spring-boot-starter-web包，SpringCloudGateway使用netty+webflux实现，webflux与web冲突-->
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-web</artifactId>
+                </exclusion>
+                <!--去除Swagger包-->
+                <exclusion>
+                    <groupId>io.springfox</groupId>
+                    <artifactId>springfox-boot-starter</artifactId>
+                </exclusion>
+
+            </exclusions>
+        </dependency>
+        <!--对SpringCloudGateway的支持-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+        <!--对负载均衡的支持，不加会报503-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-loadbalancer</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

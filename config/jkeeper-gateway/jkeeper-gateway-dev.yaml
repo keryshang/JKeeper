@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          #开启从注册中心动态创建路由的功能，利用微服务名进行路由
+          enabled: true
+          #开启小写验证，默认根据服务名查找都是用的全大写
+          lower-case-service-id: true
+      routes: #配置路由路径
+        - id: jkeeper-nacos
+          uri: lb://jkeeper-nacos
+          # 断言,路径相匹配的进行路由
+          predicates:
+            - Path=/jkeeper-nacos/**
+          filters:
+            - StripPrefix=1
+logging:
+  level:
+    root: info
+    com.kery.jkeeper: debug

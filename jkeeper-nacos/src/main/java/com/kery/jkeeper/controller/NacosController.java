@@ -23,17 +23,17 @@ public class NacosController {
     private String age;
 
     @ApiOperation("获取用户名")
-    @GetMapping("/quryName")
+    @GetMapping("/getName")
     @ResponseBody
-    public CommonResult<String> queryName(){
+    public CommonResult<String> getName(){
         String uaseName = username;
         return CommonResult.success(username);
     }
 
     @ApiOperation("获取年龄")
-    @GetMapping("/queryAge")
+    @GetMapping("/getAge")
     @ResponseBody
-    public CommonResult<String> queryAge(){
+    public CommonResult<String> getAge(){
         return CommonResult.success(age);
     }
 

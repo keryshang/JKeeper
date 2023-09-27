@@ -18,6 +18,7 @@
         <module>jkeeper-mybatis-generator</module>
         <module>jkeeper-feigh</module>
         <module>jkeeper-sentinel</module>
+        <module>jkeeper-gateway</module>
     </modules>
 
     <parent>
