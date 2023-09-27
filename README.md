@@ -53,7 +53,7 @@ Jkeeper
 > https://www.processon.com/view/link/650da3215b73a44bd050dffb
 
 ### 公众号
-> 关注公众号 `凯锐同学`
+> 关注公众号 **凯锐同学**
 
 <img src="https://pic.imgdb.cn/item/65138b5dc458853aef1f648f.jpg" alt="公众号" width="50%" />
 
