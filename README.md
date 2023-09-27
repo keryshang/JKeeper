@@ -16,7 +16,7 @@
 11. 。。。
 
 ### 项目结构 `[持续更新中]`
-```lua
+```
 Jkeeper
 ├─ JKeeper-Nacos
 ├─ JKeeper-Redis
