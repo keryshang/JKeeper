@@ -2,9 +2,10 @@
 
 ### `JKeeper` 致力于整合主流Java技术栈
 <p>
-    <a href="#auther"><img src="https://badgen.net/badge/Author/Kery/green?icon=azurepipelines" alt="auther"></a>
-    <a href="#公众号"><img src="https://badgen.net/badge/%E5%85%AC%E4%BC%97%E5%8F%B7/%E5%87%AF%E9%94%90%E5%90%8C%E5%AD%A6/green?icon=kofi" alt="公众号"></a>
-    <a href="#license"><img src="https://badgen.net/badge/license/Apache%20License%202.0/green?icon=github" alt="license"></a>
+    <a href="https://weibo.com/shangyanhui"><img src="https://img.shields.io/badge/Author-Kery-parakeet?logo=sinaweibo" alt="auther"></a>
+    <a href="#公众号"><img src="https://img.shields.io/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-%E5%87%AF%E9%94%90%E5%90%8C%E5%AD%A6-orange?logo=wechat
+" alt="公众号"></a>
+    <a href="https://gitee.com/keryshang/jkeeper/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-Apache%20License%202.0-parakeet?logo=apache" alt="license"></a>
 </p>
 
 #### 开发环境
