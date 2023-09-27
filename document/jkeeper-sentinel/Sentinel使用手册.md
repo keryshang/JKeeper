@@ -20,6 +20,9 @@ spring:
     sentinel:
       transport: # 配置 sentinel dashboard 地址
         dashboard: 192.168.1.103:8858
+        #不写client-ip SentinelDashboard首页实时监控不展示
+        client-ip: 192.168.1.1
+        #Sentinel与控制台交互的端口
         host: 8719
       eager: true #服务启动直接建立心跳连接 
       datasource:
@@ -31,9 +34,9 @@ spring:
             groupId: DEFAULT_GROUP
             data-type: json
             # 规则类型: com.alibaba.cloud.sentinel.datasource.RuleType
-            # flow限流规则
+            # flow：限流规则 degrade：熔断降级
             rule-type: flow
-        degrade: #熔断降级
+        degrade: #熔断
           nacos:
             server-addr: 192.168.1.103:8848
             dataId: jkeeper-sentinel-degrade.json
@@ -44,6 +47,7 @@ spring:
 ```
 
 ### 流控规则
+
 ```json
 [
   {
@@ -76,6 +80,7 @@ spring:
 ]
 
 ```
-其他规则详见Sentinel官方文档
+- 注：配置时需要将注释删除，否则不生效
+- 其他规则详见Sentinel官方文档
 >http://sentinelguard.io/zh-cn/docs/basic-api-resource-rule.html
 

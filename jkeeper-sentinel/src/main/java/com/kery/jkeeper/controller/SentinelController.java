@@ -38,4 +38,5 @@ public class SentinelController {
         }
         return CommonResult.success("Sentinel-Degrade");
     }
+
 }
