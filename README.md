@@ -6,8 +6,13 @@
     <a href="#公众号"><img src="https://badgen.net/badge/%E5%85%AC%E4%BC%97%E5%8F%B7/%E5%87%AF%E9%94%90%E5%90%8C%E5%AD%A6/green?icon=kofi" alt="公众号"></a>
     <a href="#license"><img src="https://badgen.net/badge/license/Apache%20License%202.0/green?icon=github" alt="license"></a>
 </p>
-#### 开发环境
 
+#### 开发环境
+- 语言：Java 8
+- IDE(JAVA)： IntelliJ IDEA
+- 依赖管理：Maven
+- 镜像管理：Docker
+- 数据库：MySQL5.7
 ### 项目涉及技术栈 `[持续更新中]`
 1. SpringBoot 2.7.0
 2. SpringCloud 2021.0.3
@@ -19,7 +24,8 @@
 8. SpringBootAdmin 系统监控
 9. Mybatis 持久层管理
 10. Feign 微服务Http远程调用
-11. 。。。
+11. Sentinel 熔断限流
+12. Coding...
 
 ### 项目结构 `[持续更新中]`
 ```
@@ -36,6 +42,8 @@ Jkeeper
 │
 ├─ JKeeper-Feign
 │
+├─ JKeeper-Sentinel
+│
 └─ 佛系Coding...
 
 ```
@@ -50,6 +58,8 @@ Jkeeper
 #### JKeeper-Mybatis-Generator
 
 #### JKeeper-Feign
+
+#### JKeeper-Sentinel
 
 ### 系统蓝图
 > https://www.processon.com/view/link/650da3215b73a44bd050dffb
