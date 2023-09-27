@@ -58,3 +58,5 @@ logging:
     root: info
     com.kery.jkeeper: debug
 ```
+> 通过网关请求样例  
+> http://192.168.1.103/jkeeper-nacos/nacos/getAge
