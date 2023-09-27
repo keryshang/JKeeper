@@ -26,6 +26,7 @@
 9. Mybatis 持久层管理
 10. Feign 微服务Http远程调用
 11. Sentinel 熔断限流
+12. SpringCloudGateway 网关
 12. Coding...
 
 ### 项目结构 `[持续更新中]`
@@ -45,6 +46,8 @@ Jkeeper
 │
 ├─ JKeeper-Sentinel
 │
+├─ JKeeper-Gateway
+│
 └─ 佛系Coding...
 
 ```
@@ -61,6 +64,8 @@ Jkeeper
 #### JKeeper-Feign
 
 #### JKeeper-Sentinel
+
+#### JKeeper-Gateway
 
 ### 系统蓝图
 > https://www.processon.com/view/link/650da3215b73a44bd050dffb
