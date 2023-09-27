@@ -1,6 +1,10 @@
 # 🚀`JKeeper`
 
 ### `JKeeper` 致力于整合主流Java技术栈
+<p>
+  <a href="#公众号"><img src="https://badgen.net/badge/%E5%85%AC%E4%BC%97%E5%8F%B7/%E5%87%AF%E9%94%90%E5%90%8C%E5%AD%A6/green?icon=kofi" alt="公众号"></a>
+</p>
+#### 开发环境
 
 ### 项目涉及技术栈 `[持续更新中]`
 1. SpringBoot 2.7.0
@@ -47,6 +51,11 @@ Jkeeper
 
 ### 系统蓝图
 > https://www.processon.com/view/link/650da3215b73a44bd050dffb
+
+### 公众号
+> 关注公众号 `凯锐同学`
+
+<img src="https://pic.imgdb.cn/item/65138b5dc458853aef1f648f.jpg" alt="公众号" style="zoom:30%;" />
 
 ![](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F6c09c295-0cea-4dc9-892a-a3fa6f7febb7%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1697795519&t=50a92a69f9f0b9a16c0683bb7faa65a7)
 
