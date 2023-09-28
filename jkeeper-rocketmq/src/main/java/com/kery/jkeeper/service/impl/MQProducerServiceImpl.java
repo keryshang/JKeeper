@@ -20,8 +20,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class MQProducerServiceImpl implements MQProducerService {
 
-    @Value("${rocketmq.producer.send-message-timeout}")
-    private Integer messageTimeOut;
+    @Value("${rocketmq.producer.sendMessageTimeout}")
+    private Integer sendMessageTimeout;
 
     // 建议正常规模项目统一用一个TOPIC
     private static final String topic = "TEST_TOPIC";
@@ -54,7 +54,7 @@ public class MQProducerServiceImpl implements MQProducerService {
 
     @Override
     public void sendDelayMsg(String msgBody, int delayLevel) {
-        rocketMQTemplate.syncSend(topic, MessageBuilder.withPayload(msgBody).build(), messageTimeOut, delayLevel);
+        rocketMQTemplate.syncSend(topic, MessageBuilder.withPayload(msgBody).build(), sendMessageTimeout, delayLevel);
     }
 
     @Override
