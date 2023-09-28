@@ -19,6 +19,7 @@
         <module>jkeeper-feigh</module>
         <module>jkeeper-sentinel</module>
         <module>jkeeper-gateway</module>
+        <module>jkeeper-security</module>
     </modules>
 
     <parent>

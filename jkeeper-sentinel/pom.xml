@@ -10,6 +10,9 @@
     </parent>
 
     <artifactId>jkeeper-sentinel</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
     <name>jkeeper-sentinel</name>
 
     <dependencies>

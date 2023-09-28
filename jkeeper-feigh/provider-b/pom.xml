@@ -10,5 +10,7 @@
     </parent>
 
     <artifactId>provider-b</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
 </project>
