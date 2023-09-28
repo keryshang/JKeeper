@@ -8,13 +8,13 @@
     <a href="https://gitee.com/keryshang/jkeeper/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-Apache%20License%202.0-parakeet?logo=apache" alt="license"></a>
 </p>
 
-#### 开发环境
+#### 🐯开发环境
 - 语言：Java 8
 - IDE(JAVA)： IntelliJ IDEA
 - 依赖管理：Maven
 - 镜像管理：Docker
 - 数据库：MySQL5.7
-### 项目涉及技术栈 `[持续更新中]`
+### 🐶项目涉及技术栈 `[持续更新中]`
 1. SpringBoot 2.7.0
 2. SpringCloud 2021.0.3
 3. Swagger-UI API接口文档
@@ -29,7 +29,7 @@
 12. SpringCloudGateway 网关
 12. Coding...
 
-### 项目结构 `[持续更新中]`
+### 🐼项目结构 `[持续更新中]`
 ```
 Jkeeper
 ├─ JKeeper-Nacos
@@ -67,10 +67,10 @@ Jkeeper
 
 #### JKeeper-Gateway
 
-### 系统蓝图
+### 🐳系统蓝图
 > https://www.processon.com/view/link/650da3215b73a44bd050dffb
 
-### 公众号
+### 😎公众号
 > 关注公众号 **凯锐同学**
 
 <img src="https://pic.imgdb.cn/item/65138b5dc458853aef1f648f.jpg" alt="公众号" width="50%" />
