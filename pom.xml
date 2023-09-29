@@ -19,6 +19,7 @@
         <module>jkeeper-feigh</module>
         <module>jkeeper-sentinel</module>
         <module>jkeeper-gateway</module>
+        <module>jkeeper-auth</module>
     </modules>
 
     <parent>
@@ -44,6 +45,8 @@
         <pagehelper-starter.version>1.4.2</pagehelper-starter.version>
         <druid.version>1.2.9</druid.version>
         <mysql-connector.version>8.0.29</mysql-connector.version>
+        <nimbus-jose-jwt.version>9.23</nimbus-jose-jwt.version>
+        <spring-cloud-starter-oauth2.version>2.2.5.RELEASE</spring-cloud-starter-oauth2.version>
     </properties>
 
     <dependencies>
@@ -152,6 +155,12 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector.version}</version>
+            </dependency>
+            <!--JWT(Json Web Token)登录支持-->
+            <dependency>
+                <groupId>com.nimbusds</groupId>
+                <artifactId>nimbus-jose-jwt</artifactId>
+                <version>${nimbus-jose-jwt.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
