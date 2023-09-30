@@ -27,7 +27,10 @@
 10. Feign 微服务Http远程调用
 11. Sentinel 熔断限流
 12. SpringCloudGateway 网关
-12. Coding...
+13. SpringSecurity 安全框架
+14. OAuth2.0 认证授权协议
+15. JWT Token实现框架
+16. Coding...
 
 ### 🐼项目结构 `[持续更新中]`
 ```
@@ -48,6 +51,8 @@ Jkeeper
 │
 ├─ JKeeper-Gateway
 │
+├─ JKeeper-Auth
+│
 └─ 佛系Coding...
 
 ```
@@ -66,6 +71,8 @@ Jkeeper
 #### JKeeper-Sentinel
 
 #### JKeeper-Gateway
+
+#### JKeeper-Auth
 
 ### 🐳系统蓝图
 > https://www.processon.com/view/link/650da3215b73a44bd050dffb
