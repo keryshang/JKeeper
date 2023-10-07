@@ -20,11 +20,6 @@
             <groupId>com.kery.jkeeper</groupId>
             <artifactId>jkeeper-common</artifactId>
         </dependency>
-        <!-- 对Redis的支持-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
         <!--对SpringSecurity的支持-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
