@@ -32,6 +32,10 @@
 15. JWT Token实现框架
 16. Coding...
 
+### 🐳系统蓝图
+![](https://pic.imgdb.cn/item/65211d9fc458853aef4e110c.jpg)
+> https://www.processon.com/view/link/650da3215b73a44bd050dffb
+
 ### 🐼项目结构 `[持续更新中]`
 ```
 Jkeeper
@@ -74,9 +78,6 @@ Jkeeper
 该模块主要涵盖：SpringCloudGateway网关的基本使用
 #### JKeeper-Auth
 该模块主要涵盖：SpringSecurity安全框架、OAuth2.0认证授权、JWT token实现框架的基本使用
-### 🐳系统蓝图
-![](https://pic.imgdb.cn/item/65211d9fc458853aef4e110c.jpg)
-> https://www.processon.com/view/link/650da3215b73a44bd050dffb
 
 ### 😎公众号
 > 关注公众号 **凯锐同学**
