@@ -1,7 +1,5 @@
 package com.kery.jkeeper.controller;
 
-import com.alibaba.csp.sentinel.annotation.SentinelResource;
-import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.kery.jkeeper.common.api.CommonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
