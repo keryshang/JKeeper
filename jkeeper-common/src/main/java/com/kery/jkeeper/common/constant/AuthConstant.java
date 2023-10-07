@@ -2,7 +2,7 @@ package com.kery.jkeeper.common.constant;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: OAuth权限相关常量
  * @date 2023/9/28
  */
 public interface AuthConstant {
