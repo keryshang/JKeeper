@@ -52,10 +52,12 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-oauth2-resource-server</artifactId>
         </dependency>
+        <!--该子模块提供了OAuth2客户端的实现，可以与OAuth2认证服务器进行交互，以获取访问令牌-->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-oauth2-client</artifactId>
         </dependency>
+        <!--该子模块提供了JSON Web令牌（JWT）的支持，可以使用JWT作为OAuth2访问令牌的替代方案-->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-oauth2-jose</artifactId>
