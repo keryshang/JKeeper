@@ -3,8 +3,8 @@ package com.kery.jkeeper.common.api;
 import lombok.Data;
 
 /**
- * @author:: Kery
- * @description:
+ * @author: Kery
+ * @description: 通用返回结果集
  * @date: 2023/9/20 13:21
  **/
 @Data
