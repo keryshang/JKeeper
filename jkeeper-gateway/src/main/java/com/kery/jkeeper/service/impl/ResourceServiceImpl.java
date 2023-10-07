@@ -1,8 +1,7 @@
 package com.kery.jkeeper.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.kery.jkeeper.common.constant.RedisConstant;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.kery.jkeeper.common.constant.AuthConstant;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -29,6 +28,6 @@ public class ResourceServiceImpl {
         resourceRolesMap.put("/jkeeper-nacos/nacos/getAge", CollUtil.toList("ADMIN"));
         resourceRolesMap.put("/jkeeper-nacos/nacos/getName", CollUtil.toList("ADMIN"));
         resourceRolesMap.put("/jkeeper-nacos/user/currentUser", CollUtil.toList("ADMIN", "TEST"));
-        redisTemplate.opsForHash().putAll(RedisConstant.RESOURCE_ROLES_MAP, resourceRolesMap);
+        redisTemplate.opsForHash().putAll(AuthConstant.RESOURCE_ROLES_MAP_KEY, resourceRolesMap);
     }
 }
