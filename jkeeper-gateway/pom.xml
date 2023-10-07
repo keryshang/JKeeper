@@ -31,7 +31,6 @@
                     <groupId>io.springfox</groupId>
                     <artifactId>springfox-boot-starter</artifactId>
                 </exclusion>
-
             </exclusions>
         </dependency>
         <!--对SpringCloudGateway的支持-->
@@ -44,12 +43,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-loadbalancer</artifactId>
         </dependency>
-        <!--整和SpringSecurity+OAuth2.0+JWT-->
+        <!--整合SpringSecurity+OAuth2.0+JWT-->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
         </dependency>
-        <!--对OAuth的支持-->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-oauth2-resource-server</artifactId>
