@@ -63,7 +63,7 @@ Jkeeper
 #### JKeeper-RocketMQ
 该模块主要涵盖：RocketMQ中间件的基本使用
 #### JKeeper-Monitor
-该模块主要涵盖：SpringBootAdmin、SpringSecurity的基本使用
+该模块主要涵盖：SpringBootAdmin服务监控、SpringSecurity安全框架的基本使用
 #### JKeeper-Mybatis-Generator
 该模块主要涵盖：Mybatis、MybatisGenerator的基本使用
 #### JKeeper-Feign
