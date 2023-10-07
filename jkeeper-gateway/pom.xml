@@ -44,10 +44,12 @@
             <artifactId>spring-cloud-loadbalancer</artifactId>
         </dependency>
         <!--整合SpringSecurity+OAuth2.0+JWT-->
+        <!--提供了对配置的支持-->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
         </dependency>
+        <!--提供了对资源服务的支持-->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-oauth2-resource-server</artifactId>
