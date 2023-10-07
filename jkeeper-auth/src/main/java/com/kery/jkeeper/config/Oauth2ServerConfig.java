@@ -24,7 +24,7 @@ import java.util.List;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: 认证服务器配置
  * @date 2023/9/28
  */
 
@@ -45,8 +45,8 @@ public class Oauth2ServerConfig extends AuthorizationServerConfigurerAdapter {
                 .secret(passwordEncoder.encode("123456"))
                 .scopes("all")
                 .authorizedGrantTypes("password", "refresh_token")
-                .accessTokenValiditySeconds(3600)
-                .refreshTokenValiditySeconds(86400);
+                .accessTokenValiditySeconds(3600) //token有效期
+                .refreshTokenValiditySeconds(3600*24); //refresh_token的有效期
     }
 
     @Override

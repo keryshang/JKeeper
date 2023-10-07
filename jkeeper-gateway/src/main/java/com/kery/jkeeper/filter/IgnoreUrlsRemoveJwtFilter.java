@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: 白名单路径访问时需要移除JWT请求头
  * @date 2023/9/28
  */
 @Component

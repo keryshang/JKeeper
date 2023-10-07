@@ -2,7 +2,7 @@ package com.kery.jkeeper.constant;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: 消息常量
  * @date 2023/9/28
  */
 public class MessageConstant {

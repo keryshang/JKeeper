@@ -17,7 +17,7 @@ import java.nio.charset.Charset;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: 自定义返回结果：没有登录或token过期时
  * @date 2023/9/28
  */
 @Component

@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: 网关白名单配置
  * @date 2023/9/28
  */
 @Data

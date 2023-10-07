@@ -17,7 +17,7 @@ import java.text.ParseException;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: 将登录用户的JWT转化成用户信息的全局过滤器
  * @date 2023/9/28
  */
 @Component

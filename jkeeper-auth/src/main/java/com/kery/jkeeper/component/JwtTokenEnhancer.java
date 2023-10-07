@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: JWT令牌增强器
  * @date 2023/9/28
  */
 @Component

@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: OAuth2获取Token返回信息DTO
  * @date 2023/9/28
  */
 @Data

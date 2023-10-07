@@ -33,7 +33,7 @@ import java.util.stream.Collectors;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: 鉴权管理器，用于判断是否有资源的访问权限
  * @date 2023/9/28
  */
 @Component

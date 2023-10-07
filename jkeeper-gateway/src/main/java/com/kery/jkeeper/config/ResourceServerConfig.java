@@ -23,7 +23,7 @@ import reactor.core.publisher.Mono;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: 资源服务器配置
  * @date 2023/9/28
  */
 @AllArgsConstructor

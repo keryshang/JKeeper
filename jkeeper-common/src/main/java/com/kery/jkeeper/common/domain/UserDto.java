@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: 用户信息DTO
  * @date 2023/9/28
  */
 @Data

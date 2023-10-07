@@ -11,7 +11,7 @@ import java.util.Collection;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: 登录用户信息
  * @date 2023/9/28
  */
 @Data

@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: 用户信息管理
  * @date 2023/9/28
  */
 @Service
@@ -36,7 +36,7 @@ public class UserServiceImpl implements UserDetailsService {
         String password = passwordEncoder.encode("123456");
         userList = new ArrayList<>();
         userList.add(new UserDto(1L,"kery", password,1, "jkeeper-nacos",CollUtil.toList("ADMIN")));
-        userList.add(new UserDto(2L,"andy", password,1, "jkeeper-nacos",CollUtil.toList("TEST")));
+        userList.add(new UserDto(2L,"tony", password,1, "jkeeper-nacos",CollUtil.toList("TEST")));
     }
 
     @Override

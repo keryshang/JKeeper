@@ -15,6 +15,30 @@ spring:
             - Path=/jkeeper-nacos/**
           filters:
             - StripPrefix=1
+        - id: jkeeper-auth
+          uri: lb://jkeeper-auth
+          predicates:
+            - Path=/jkeeper-auth/**
+          filters:
+            - StripPrefix=1
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: 'http://192.168.1.1:8090/rsa/publicKey' #配置RSA的公钥访问地址
+  redis:
+    database: 0
+    port: 6379
+    host: 192.168.1.103
+    password:
+secure:
+  ignore:
+    urls: #配置白名单路径
+      - "/doc.html"
+      - "/swagger-resources/**"
+      - "/swagger-ui/**"
+      - "/actuator/**"
+      - "/jkeeper-auth/oauth/token"
 logging:
   level:
     root: info

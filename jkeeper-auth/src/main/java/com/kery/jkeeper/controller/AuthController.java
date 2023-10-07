@@ -22,7 +22,7 @@ import java.util.Map;
 
 /**
  * @author Kery
- * @Description:
+ * @Description: OAuth获取令牌接口
  * @date 2023/9/28
  */
 
@@ -35,7 +35,7 @@ public class AuthController {
     @Autowired
     private TokenEndpoint tokenEndpoint;
 
-    @ApiOperation("Oauth2获取token")
+    @ApiOperation("OAuth2获取token")
     @RequestMapping(value = "/token", method = RequestMethod.POST)
     public CommonResult<Oauth2TokenDto> postAccessToken(HttpServletRequest request,
                                                         @ApiParam("授权模式") @RequestParam String grant_type,
