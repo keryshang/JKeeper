@@ -11,6 +11,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.server.authorization.AuthorizationContext;
 import org.springframework.stereotype.Component;
+import org.springframework.util.AntPathMatcher;
+import org.springframework.util.PathMatcher;
 import reactor.core.publisher.Mono;
 
 import javax.annotation.Resource;
@@ -34,6 +36,14 @@ public class AuthorizationManager implements ReactiveAuthorizationManager<Author
     public Mono<AuthorizationDecision> check(Mono<Authentication> mono, AuthorizationContext authorizationContext) {
         //从Redis中获取当前路径可访问角色列表
         URI uri = authorizationContext.getExchange().getRequest().getURI();
+        PathMatcher pathMatcher = new AntPathMatcher();
+        //白名单路径直接放行
+        List<String> ignoreUrls = ignoreUrlsConfig.getUrls();
+        for (String ignoreUrl : ignoreUrls) {
+            if (pathMatcher.match(ignoreUrl, uri.getPath())) {
+                return Mono.just(new AuthorizationDecision(true));
+            }
+        }
         Object obj = redisTemplate.opsForHash().get(AuthConstant.RESOURCE_ROLES_MAP_KEY, uri.getPath());
         List<String> authorities = Convert.toList(String.class, obj);
         authorities = authorities.stream().map(i -> i = AuthConstant.AUTHORITY_PREFIX + i).collect(Collectors.toList());
