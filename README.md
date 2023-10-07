@@ -14,6 +14,11 @@
 - 依赖管理：Maven
 - 镜像管理：Docker
 - 数据库：MySQL5.7
+
+### 🐳系统蓝图
+![](https://pic.imgdb.cn/item/65211d9fc458853aef4e110c.jpg)
+> https://www.processon.com/view/link/650da3215b73a44bd050dffb
+
 ### 🐶项目涉及技术栈 `[持续更新中]`
 1. SpringBoot 2.7.0
 2. SpringCloud 2021.0.3
@@ -31,10 +36,6 @@
 14. OAuth2.0 认证授权协议
 15. JWT Token实现框架
 16. Coding...
-
-### 🐳系统蓝图
-![](https://pic.imgdb.cn/item/65211d9fc458853aef4e110c.jpg)
-> https://www.processon.com/view/link/650da3215b73a44bd050dffb
 
 ### 🐼项目结构 `[持续更新中]`
 ```
