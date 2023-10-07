@@ -57,23 +57,23 @@ Jkeeper
 
 ```
 #### JKeeper-Nacos
-
+该模块主要涵盖：Nacos注册中心、Nacos配置中心、Logback日志的基本使用
 #### JKeeper-Redis
-
+该模块主要涵盖：Redis中间件的基本使用
 #### JKeeper-RocketMQ
-
+该模块主要涵盖：RocketMQ中间件的基本使用
 #### JKeeper-Monitor
-
+该模块主要涵盖：SpringBootAdmin、SpringSecurity的基本使用
 #### JKeeper-Mybatis-Generator
-
+该模块主要涵盖：Mybatis、MybatisGenerator的基本使用
 #### JKeeper-Feign
-
+该模块主要涵盖：OpenFeign远程服务调用的基本使用
 #### JKeeper-Sentinel
-
+该模块主要涵盖：Sentinel服务熔断限流的基本使用
 #### JKeeper-Gateway
-
+该模块主要涵盖：SpringCloudGateway网关的基本使用
 #### JKeeper-Auth
-
+该模块主要涵盖：SpringSecurity安全框架、OAuth2.0认证授权、JWT token实现框架的基本使用
 ### 🐳系统蓝图
 > https://www.processon.com/view/link/650da3215b73a44bd050dffb
 
