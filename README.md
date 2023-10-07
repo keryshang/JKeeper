@@ -59,9 +59,9 @@ Jkeeper
 #### JKeeper-Nacos
 该模块主要涵盖：Nacos注册中心、Nacos配置中心、Logback日志的基本使用
 #### JKeeper-Redis
-该模块主要涵盖：Redis中间件的基本使用
+该模块主要涵盖：Redis缓存数据库的基本使用
 #### JKeeper-RocketMQ
-该模块主要涵盖：RocketMQ中间件的基本使用
+该模块主要涵盖：RocketMQ消息中间件的基本使用
 #### JKeeper-Monitor
 该模块主要涵盖：SpringBootAdmin服务监控、SpringSecurity安全框架的基本使用
 #### JKeeper-Mybatis-Generator
