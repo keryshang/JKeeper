@@ -1,4 +1,4 @@
-package com.kery.jkeeper.common.execption;
+package com.kery.jkeeper.common.exception;
 
 import com.kery.jkeeper.common.api.IErrorCode;
 

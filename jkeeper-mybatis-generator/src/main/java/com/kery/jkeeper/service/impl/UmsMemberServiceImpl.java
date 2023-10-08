@@ -1,7 +1,7 @@
 package com.kery.jkeeper.service.impl;
 
 import cn.hutool.crypto.digest.BCrypt;
-import com.kery.jkeeper.common.execption.Asserts;
+import com.kery.jkeeper.common.exception.Asserts;
 import com.kery.jkeeper.mapper.UmsMemberMapper;
 import com.kery.jkeeper.model.UmsMember;
 import com.kery.jkeeper.model.UmsMemberExample;
