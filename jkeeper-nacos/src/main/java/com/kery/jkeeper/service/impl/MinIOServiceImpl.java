@@ -81,6 +81,18 @@ public class MinIOServiceImpl implements MinIOService {
         return CommonResult.failed();
     }
 
+    private BucketPolicyConfigDto createBucketPolicyConfigDto(String bucketName) {
+        BucketPolicyConfigDto.Statement statement = BucketPolicyConfigDto.Statement.builder()
+                .Effect("Allow")
+                .Principal("*")
+                .Action("s3:GetObject")
+                .Resource("arn:aws:s3:::"+bucketName+"/*.**").build();
+        return BucketPolicyConfigDto.builder()
+                .Version("2012-10-17")
+                .Statement(CollUtil.toList(statement))
+                .build();
+    }
+
     @Override
     public InputStream download(String objectName, HttpServletResponse response) {
         //objectName需要包含存储桶下级文件目录名，例如:20231019/微信图片_20230919151908.jpg
@@ -110,17 +122,7 @@ public class MinIOServiceImpl implements MinIOService {
         return null;
     }
 
-    private BucketPolicyConfigDto createBucketPolicyConfigDto(String bucketName) {
-        BucketPolicyConfigDto.Statement statement = BucketPolicyConfigDto.Statement.builder()
-                .Effect("Allow")
-                .Principal("*")
-                .Action("s3:GetObject")
-                .Resource("arn:aws:s3:::"+bucketName+"/*.**").build();
-        return BucketPolicyConfigDto.builder()
-                .Version("2012-10-17")
-                .Statement(CollUtil.toList(statement))
-                .build();
-    }
+
 
     @Override
     public CommonResult delete(String objectName) {
