@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
- * Description:
+ * Description: MinIO上传文件参数
  * Author: Kery
  * Date: 2023/10/19
  */
