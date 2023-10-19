@@ -10,6 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.InputStream;
+
 
 /**
  * Description: MinIO对象存储管理
@@ -28,6 +31,12 @@ public class MinIOController {
     @PostMapping("/upload")
     public CommonResult upload(@RequestPart("file") MultipartFile file){
         return minIOService.upload(file);
+    }
+
+    @ApiOperation("文件下载")
+    @PostMapping("/download")
+    public void download(@RequestParam String objectName, HttpServletResponse response){
+        minIOService.download(objectName, response);
     }
 
     @ApiOperation("文件删除")

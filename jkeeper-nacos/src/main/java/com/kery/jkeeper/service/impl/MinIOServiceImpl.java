@@ -12,6 +12,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletResponse;
+import java.io.FilterInputStream;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -63,10 +67,12 @@ public class MinIOServiceImpl implements MinIOService {
                     .contentType(file.getContentType())
                     .stream(file.getInputStream(), file.getSize(), ObjectWriteArgs.MIN_MULTIPART_SIZE).build();
             minioClient.putObject(putObjectArgs);
-            log.info("文件上传成功!");
+            //文件URL地址
+            String fileUrl = ENDPOINT + "/" + BUCKET_NAME + "/" + objectName;
+            log.info("文件上传成功！文件名：{}，URL：{}", filename, fileUrl);
             MinIOUploadDto minIOUploadDto = new MinIOUploadDto();
             minIOUploadDto.setName(filename);
-            minIOUploadDto.setUrl(ENDPOINT + "/" + BUCKET_NAME + "/" + objectName);
+            minIOUploadDto.setUrl(fileUrl);
             return CommonResult.success(minIOUploadDto);
         } catch (Exception e) {
             e.printStackTrace();
@@ -74,6 +80,36 @@ public class MinIOServiceImpl implements MinIOService {
         }
         return CommonResult.failed();
     }
+
+    @Override
+    public InputStream download(String objectName, HttpServletResponse response) {
+        //objectName需要包含存储桶下级文件目录名，例如:20231019/微信图片_20230919151908.jpg
+        try {
+            //创建一个MinIO的Java客户端
+            MinioClient minioClient =MinioClient.builder()
+                    .endpoint(ENDPOINT)
+                    .credentials(ACCESS_KEY,SECRET_KEY)
+                    .build();
+            FilterInputStream file = minioClient.getObject(GetObjectArgs.builder().bucket(BUCKET_NAME).object(objectName).build());
+            response.setHeader("Content-Disposition", "attachment;filename=" + objectName);
+            ServletOutputStream servletOutputStream = response.getOutputStream();
+            int len;
+            byte[] buffer = new byte[1024];
+            while ((len = file.read(buffer)) > 0) {
+                servletOutputStream.write(buffer, 0, len);
+            }
+            servletOutputStream.flush();
+            file.close();
+            servletOutputStream.close();
+            log.info("文件下载成功！文件名：{}", objectName);
+            return file;
+        } catch (Exception e) {
+            e.printStackTrace();
+            log.error("文件下载报错：{}", e.getMessage());
+        }
+        return null;
+    }
+
     private BucketPolicyConfigDto createBucketPolicyConfigDto(String bucketName) {
         BucketPolicyConfigDto.Statement statement = BucketPolicyConfigDto.Statement.builder()
                 .Effect("Allow")
@@ -94,6 +130,7 @@ public class MinIOServiceImpl implements MinIOService {
                     .credentials(ACCESS_KEY,SECRET_KEY)
                     .build();
             minioClient.removeObject(RemoveObjectArgs.builder().bucket(BUCKET_NAME).object(objectName).build());
+            log.info("文件删除成功！文件名：{}", objectName);
             return CommonResult.success(null);
         } catch (Exception e) {
             e.printStackTrace();
