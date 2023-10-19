@@ -57,6 +57,7 @@ public class MinIOServiceImpl implements MinIOService {
                 minioClient.setBucketPolicy(setBucketPolicyArgs);
             }
             String filename = file.getOriginalFilename();
+            //设置文件存储名，文件以日期为文件目录存储，文件名包含文件日期目录，例如：20231019/微信图片_20230919151908.jpg
             SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
             // 设置存储对象名称
             String objectName = sdf.format(new Date()) + "/" + filename;
@@ -126,6 +127,7 @@ public class MinIOServiceImpl implements MinIOService {
 
     @Override
     public CommonResult delete(String objectName) {
+        //objectName需要包含存储桶下级文件目录名，例如:20231019/微信图片_20230919151908.jpg
         try {
             MinioClient minioClient = MinioClient.builder()
                     .endpoint(ENDPOINT)
