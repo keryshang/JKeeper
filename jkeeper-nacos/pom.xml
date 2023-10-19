@@ -20,7 +20,10 @@
             <groupId>com.kery.jkeeper</groupId>
             <artifactId>jkeeper-common</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
