@@ -1,4 +1,5 @@
 # Seata使用手册
+Seata官方网站：https://seata.io/zh-cn/docs/overview/what-is-seata.html
 ### 依赖
 ```xml
         <!--对Seata的支持-->
