@@ -20,6 +20,7 @@
         <module>jkeeper-sentinel</module>
         <module>jkeeper-gateway</module>
         <module>jkeeper-auth</module>
+        <module>jkeeper-seata</module>
     </modules>
 
     <parent>

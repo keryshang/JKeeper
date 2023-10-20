@@ -22,7 +22,8 @@ import java.io.InputStream;
 @Slf4j
 @Api(tags = "MinIOController")
 @Tag(name = "MinIOController", description = "MinIO对象存储管理")
-@RestController("/minio")
+@RestController
+@RequestMapping(("/minio"))
 public class MinIOController {
     @Autowired
     private MinIOService minIOService;

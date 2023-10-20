@@ -1,0 +1,6 @@
+server:
+  port: 8092
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
