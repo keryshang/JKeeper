@@ -35,6 +35,7 @@
 13. SpringSecurity 安全框架
 14. OAuth2.0 认证授权协议
 15. JWT Token实现框架
+16. Seata分布式事务
 16. Coding...
 
 ### 🐼项目结构 `[持续更新中]`
@@ -58,6 +59,8 @@ Jkeeper
 │
 ├─ JKeeper-Auth
 │
+├─ JKeeper-Seata
+│
 └─ 佛系Coding...
 
 ```
@@ -79,7 +82,8 @@ Jkeeper
 该模块主要涵盖：SpringCloudGateway网关的基本使用
 #### JKeeper-Auth
 该模块主要涵盖：SpringSecurity安全框架、OAuth2.0认证授权、JWT token实现框架的基本使用
-
+#### JKeeper-Seata
+该模块主要涵盖：Seata分布式事务的基本使用
 ### 😎公众号
 > 关注公众号 **凯锐同学**
 
