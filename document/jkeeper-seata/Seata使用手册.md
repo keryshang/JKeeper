@@ -74,3 +74,22 @@ logging:
     root: info
     com.kery.jkeeper: debug
 ```
+### 测试操作手册
+该Demo分为三个模块，账户、订单、库存。创建订单时，须同时对账户余额和库存进行相应扣减操作
+
+seata-account 端口号：8091  
+seata-order 端口号：8092  
+seata-storage 端口号：8093  
+项目启动之后，查看Seata日志，三个服务均成功注册到Seata
+![](https://pic.imgdb.cn/item/6535d272c458853aef2754e9.jpg)
+创建订单测试：http://localhost:8092/order/create
+![](https://pic.imgdb.cn/item/6535d1f2c458853aef26456f.jpg)
+![](https://pic.imgdb.cn/item/6535d208c458853aef2676fb.jpg)
+查看数据库，订单已经生成，库存和账户均进行了相应的扣减
+![](https://pic.imgdb.cn/item/6535d572c458853aef2e5111.jpg)
+接下来测试异常情况，在账户扣减模块模拟一个扣减超时异常
+![](https://pic.imgdb.cn/item/6535d2fac458853aef2874fd.jpg)
+重新调用订单创建接口，使用debug模式，当异常产生后查看seata后台可查询到当前执行的事务信息
+![](https://pic.imgdb.cn/item/6535d1c9c458853aef25f594.jpg)
+![](https://pic.imgdb.cn/item/6535d227c458853aef26b6aa.jpg)
+该请求执行完毕后该事务由于异常进行了回滚操作，查看订单数据库，此时并没有新的订单生成，同事库存和账户也没有进行任何扣减操作，查看Seata后台，由于该事务已经执行了回归操作，因此已经查询不到该事务的信息。
