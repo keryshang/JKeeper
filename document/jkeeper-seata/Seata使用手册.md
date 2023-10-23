@@ -43,7 +43,7 @@ Seata官方网站：https://seata.io/zh-cn/docs/overview/what-is-seata.html
 ```yaml
 spring:
   datasource:
-    url: jdbc:mysql://192.168.1.103:3306/jkeeper?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://192.168.1.106:3306/jkeeper?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
     password: 123456
 seata: # Seata配置
@@ -56,7 +56,7 @@ seata: # Seata配置
     type: nacos
     nacos:
       application: seata-server
-      server-addr: 192.168.1.103:8848
+      server-addr: 192.168.1.106:8848
       group: DEFAULT_GROUP
 feign:
   okhttp:

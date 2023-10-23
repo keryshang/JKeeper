@@ -19,7 +19,7 @@ spring:
   cloud:
     sentinel:
       transport: # 配置 sentinel dashboard 地址
-        dashboard: 192.168.1.103:8858
+        dashboard: 192.168.1.106:8858
         #不写client-ip SentinelDashboard首页实时监控不展示
         client-ip: 192.168.1.1
         #Sentinel与控制台交互的端口
@@ -28,7 +28,7 @@ spring:
       datasource:
         flow: #限流 名称任意, 代表数据源
           nacos:
-            server-addr: 192.168.1.103:8848
+            server-addr: 192.168.1.106:8848
             dataId: jkeeper-sentinel-flow.json
             namespace: public
             groupId: DEFAULT_GROUP
@@ -38,7 +38,7 @@ spring:
             rule-type: flow
         degrade: #熔断
           nacos:
-            server-addr: 192.168.1.103:8848
+            server-addr: 192.168.1.106:8848
             dataId: jkeeper-sentinel-degrade.json
             namespace: public
             groupId: DEFAULT_GROUP

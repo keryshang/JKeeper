@@ -1,5 +1,5 @@
 rocketmq:
-  name-server: 192.168.1.103:9876
+  name-server: 192.168.1.106:9876
   consumer:
     group: jkeeper_group
     # 一次拉取消息最大值，注意是拉取消息的最大值而非消费最大值

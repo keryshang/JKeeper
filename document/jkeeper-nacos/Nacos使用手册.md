@@ -19,13 +19,13 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.1.103:8848
+        server-addr: 192.168.1.106:8848
         username: 
         password: 
         namespace: #默认是public
         group: #默认是DEFAULT_GROUP
       config:
-        server-addr: 192.168.1.103:8848
+        server-addr: 192.168.1.106:8848
         username: nacos
         password: nacos
         namespace: #默认是public
