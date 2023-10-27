@@ -98,7 +98,7 @@ Jkeeper
 该模块主要涵盖：SpringSecurity安全框架、OAuth2.0认证授权、JWT token实现框架的基本使用  
 [SpringSecurity+OAuth+JWT使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-auth/SpringSecurity+OAuth+JWT%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 #### JKeeper-Seata
-该模块主要涵盖：Seata分布式事务的基本使用
+该模块主要涵盖：Seata分布式事务的基本使用  
 [Seata使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-seata/Seata%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 ### 😎公众号
 > 关注公众号 **凯锐同学**
