@@ -41,6 +41,8 @@
 ### 🐼项目结构 `[持续更新中]`
 ```
 Jkeeper
+├─ JKeeper-Common
+│
 ├─ JKeeper-Nacos
 │
 ├─ JKeeper-Redis
@@ -64,26 +66,40 @@ Jkeeper
 └─ 佛系Coding...
 
 ```
+#### JKeeper-Common
+该模块为公共模块，为其它项目提供公共组件支持  
+[SwaggerUI使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-common/SwaggerUI%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 #### JKeeper-Nacos
-该模块主要涵盖：Nacos注册中心、Nacos配置中心、Logback日志、MinIO分布式对象存储的基本使用
+该模块主要涵盖：Nacos注册中心、Nacos配置中心、Logback日志、MinIO分布式对象存储的基本使用  
+[Nacos使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-nacos/Nacos%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)  
+[MinIO对象存储使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-nacos/MinIO%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 #### JKeeper-Redis
-该模块主要涵盖：Redis缓存数据库的基本使用
+该模块主要涵盖：Redis缓存数据库的基本使用  
+[Redis使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-redis/Redis%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 #### JKeeper-RocketMQ
-该模块主要涵盖：RocketMQ消息中间件的基本使用
+该模块主要涵盖：RocketMQ消息中间件的基本使用  
+[RocketMQ使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-rockermq/RocketMQ%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 #### JKeeper-Monitor
-该模块主要涵盖：SpringBootAdmin服务监控、SpringSecurity安全框架的基本使用
+该模块主要涵盖：SpringBootAdmin服务监控、SpringSecurity安全框架的基本使用  
+[SpringBootAdmin监控使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-monitor/SpringBootAdmin%E7%9B%91%E6%8E%A7%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 #### JKeeper-Mybatis-Generator
-该模块主要涵盖：Mybatis、MybatisGenerator的基本使用
+该模块主要涵盖：Mybatis、MybatisGenerator的基本使用  
+[Mybatis+Generator使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-mybatis-generator/Mybatis%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 #### JKeeper-Feign
-该模块主要涵盖：OpenFeign远程服务调用的基本使用
+该模块主要涵盖：OpenFeign远程服务调用的基本使用  
+[Feign使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-feign/Feign%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 #### JKeeper-Sentinel
-该模块主要涵盖：Sentinel服务熔断限流的基本使用
+该模块主要涵盖：Sentinel服务熔断限流的基本使用  
+[Sentinel使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-sentinel/Sentinel%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 #### JKeeper-Gateway
-该模块主要涵盖：SpringCloudGateway网关的基本使用
+该模块主要涵盖：SpringCloudGateway网关的基本使用  
+[SpringCloudGateway使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-gateway/Gateway%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 #### JKeeper-Auth
-该模块主要涵盖：SpringSecurity安全框架、OAuth2.0认证授权、JWT token实现框架的基本使用
+该模块主要涵盖：SpringSecurity安全框架、OAuth2.0认证授权、JWT token实现框架的基本使用  
+[SpringSecurity+OAuth+JWT使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-auth/SpringSecurity+OAuth+JWT%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 #### JKeeper-Seata
 该模块主要涵盖：Seata分布式事务的基本使用
+[Seata使用手册](https://gitee.com/keryshang/jkeeper/blob/master/document/jkeeper-seata/Seata%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md)
 ### 😎公众号
 > 关注公众号 **凯锐同学**
 
