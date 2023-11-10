@@ -21,6 +21,7 @@
         <module>jkeeper-gateway</module>
         <module>jkeeper-auth</module>
         <module>jkeeper-seata</module>
+        <module>jkeeper-guide</module>
     </modules>
 
     <parent>
