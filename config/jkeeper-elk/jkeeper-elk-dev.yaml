@@ -4,3 +4,6 @@ logstash:
   host: 192.168.1.106
 logging:
   config: classpath:logback-spring.xml
+  level:
+    root: info
+    com.kery.jkeeper: debug
