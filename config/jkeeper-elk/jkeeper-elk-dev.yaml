@@ -1,0 +1,6 @@
+user:
+  name: Kery
+logstash:
+  host: 192.168.1.106
+logging:
+  config: classpath:logback-spring.xml
