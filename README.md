@@ -16,7 +16,7 @@
 - 数据库：MySQL5.7
 
 ### 🐳系统蓝图
-![](https://pic.imgdb.cn/item/653b7d22c458853aef883f83.jpg)
+![](https://pic.imgdb.cn/item/6555b9b1c458853aef1d5453.jpg)
 > https://www.processon.com/view/link/650da3215b73a44bd050dffb
 
 ### 🐶项目涉及技术栈 `[持续更新中]`
