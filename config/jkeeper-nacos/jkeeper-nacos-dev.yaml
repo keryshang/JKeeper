@@ -8,4 +8,6 @@ minio:
   accessKey:  #访问的key
   secretKey:  #访问的秘钥
 logging:
+  level:
+    root: info
   config: classpath:logback-spring.xml
