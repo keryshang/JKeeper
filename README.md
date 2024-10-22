@@ -37,7 +37,7 @@
 15. JWT Token实现框架
 16. Seata分布式事务
 17. ELK(Elasticsearch+Logstash+Kibana) 日志收集检索
-18. Coding...
+18. Loading...
 
 ### 🐼项目结构 `[持续更新中]`
 ```
@@ -66,7 +66,7 @@ Jkeeper
 │
 ├─ JKeeper-ELK
 │
-└─ 佛系Coding...
+└─ Loading...
 
 ```
 #### JKeeper-Common
